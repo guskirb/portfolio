@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { RouterProvider } from "react-router-dom";
 
 import { createRouter } from "./routes/routes";
+import ThemeProvider from "../context/theme";
 
 const AppRouter = () => {
   const router = useMemo(() => createRouter(), []);
@@ -10,7 +11,11 @@ const AppRouter = () => {
 };
 
 function App() {
-  return <AppRouter />;
+  return (
+    <ThemeProvider>
+      <AppRouter />
+    </ThemeProvider>
+  );
 }
 
 export default App;

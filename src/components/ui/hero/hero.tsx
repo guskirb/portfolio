@@ -1,6 +1,11 @@
+import useTheme from "../../../hooks/useTheme";
 
 export default function Hero() {
+  const { theme, setTheme } = useTheme();
+
   return (
-    <div>hero</div>
-  )
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+      Theme
+    </button>
+  );
 }
