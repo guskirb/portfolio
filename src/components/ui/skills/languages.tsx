@@ -15,7 +15,6 @@ export default function Languages() {
 
   return (
     <Card
-      color="bg-pink-300"
       handleMouseOut={handleMouseOut}
       handleMouseOver={handleMouseOver}
     >
@@ -23,29 +22,48 @@ export default function Languages() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 dark:text-white rotate-12 translate-x-[230px] -translate-y-7",
+          "absolute duration-300 text-yellow-300 rotate-12 translate-x-[210px] -translate-y-7",
           isHovering ? "opacity-1 -translate-y-10" : "opacity-0"
         )}
       />
-
       <h3 className="text-3xl">Languages</h3>
       <div className="flex gap-3 flex-wrap">
         <Tooltip id="html" float>
           HTML
         </Tooltip>
-        <Html5Original size="60" data-tooltip-id="html" />
+        <div
+          data-tooltip-id="html"
+          className="p-2 bg-[#e44d2650] rounded-xl flex justify-center items-center"
+        >
+          <Html5Original size="40" />
+        </div>
         <Tooltip id="css" float>
           CSS
         </Tooltip>
-        <Css3Original size="60" data-tooltip-id="css" />
+        <div
+          data-tooltip-id="css"
+          className="p-2 bg-[#1572b650] rounded-xl flex justify-center items-center"
+        >
+          <Css3Original size="40" />
+        </div>
         <Tooltip id="js" float>
           JavaScript
         </Tooltip>
-        <JavascriptOriginal size="60" data-tooltip-id="js" />
+        <div
+          data-tooltip-id="js"
+          className="p-2 bg-[#f0db4f50] rounded-xl flex justify-center items-center"
+        >
+          <JavascriptOriginal size="40" data-tooltip-id="js" />
+        </div>
         <Tooltip id="ts" float>
           TypeScript
         </Tooltip>
-        <TypescriptOriginal size="60" data-tooltip-id="ts" />
+        <div
+          data-tooltip-id="ts"
+          className="p-2 bg-[#007acc50] rounded-xl flex justify-center items-center"
+        >
+          <TypescriptOriginal size="40" data-tooltip-id="ts" />
+        </div>
       </div>
     </Card>
   );
