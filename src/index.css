@@ -27,15 +27,6 @@
   overflow-y: hidden;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #747bff;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -160,4 +151,9 @@ button:focus-visible {
 
 .skill-card:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.active {
+  scale: 1.5;
+  opacity: 1;
 }
