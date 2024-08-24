@@ -6,10 +6,11 @@ import {
   AzuresqldatabasePlain,
 } from "devicons-react";
 import { Braces } from "lucide-react";
-import { Tooltip } from "react-tooltip";
+
 import Card from "./card";
 import useHover from "../../../hooks/useHover";
 import { cn } from "../../../lib/cn";
+import SkillIcon from "./skill-icon";
 
 export default function Languages() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
@@ -26,51 +27,21 @@ export default function Languages() {
       />
       <h3 className="text-3xl">Languages</h3>
       <div className="flex gap-3 flex-wrap">
-        <Tooltip id="html" float>
-          HTML
-        </Tooltip>
-        <div
-          data-tooltip-id="html"
-          className="p-2 bg-[#e44d2650] rounded-xl flex justify-center items-center"
-        >
+        <SkillIcon name="HTML" id="html" className="bg-[#e44d2650]">
           <Html5Original size="40" />
-        </div>
-        <Tooltip id="css" float>
-          CSS
-        </Tooltip>
-        <div
-          data-tooltip-id="css"
-          className="p-2 bg-[#1572b650] rounded-xl flex justify-center items-center"
-        >
+        </SkillIcon>
+        <SkillIcon name="CSS" id="css" className="bg-[#1572b650]">
           <Css3Original size="40" />
-        </div>
-        <Tooltip id="js" float>
-          JavaScript
-        </Tooltip>
-        <div
-          data-tooltip-id="js"
-          className="p-2 bg-[#f0db4f50] rounded-xl flex justify-center items-center"
-        >
+        </SkillIcon>
+        <SkillIcon name="JavaScript" id="js" className="bg-[#f0db4f50]">
           <JavascriptOriginal size="40" />
-        </div>
-        <Tooltip id="ts" float>
-          TypeScript
-        </Tooltip>
-        <div
-          data-tooltip-id="ts"
-          className="p-2 bg-[#007acc50] rounded-xl flex justify-center items-center"
-        >
+        </SkillIcon>
+        <SkillIcon name="TypeScript" id="ts" className="bg-[#007acc50]">
           <TypescriptOriginal size="40" />
-        </div>
-        <Tooltip id="sql" float>
-          SQL
-        </Tooltip>
-        <div
-          data-tooltip-id="sql"
-          className="p-2 bg-[#1f65b750] rounded-xl flex justify-center items-center"
-        >
+        </SkillIcon>
+        <SkillIcon name="SQL" id="sql" className="bg-[#1f65b750]">
           <AzuresqldatabasePlain size="40" />
-        </div>
+        </SkillIcon>
       </div>
     </Card>
   );

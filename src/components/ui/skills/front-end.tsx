@@ -1,10 +1,14 @@
-import { Tooltip } from "react-tooltip";
 import { Brush, Palette } from "lucide-react";
-import { ReactOriginal, TailwindcssOriginal } from "devicons-react";
+import {
+  FramermotionOriginal,
+  ReactOriginal,
+  TailwindcssOriginal,
+} from "devicons-react";
 
 import useHover from "../../../hooks/useHover";
 import Card from "./card";
 import { cn } from "../../../lib/cn";
+import SkillIcon from "./skill-icon";
 
 export default function FrontEnd() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
@@ -14,8 +18,8 @@ export default function FrontEnd() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-pink-300 rotate-12 translate-x-[110px] translate-y-[60px]",
-          isHovering ? "opacity-1 translate-y-[90px]" : "opacity-0"
+          "absolute duration-300 text-pink-300 rotate-12 translate-x-[170px] translate-y-[70px]",
+          isHovering ? "opacity-1 translate-y-[100px]" : "opacity-0"
         )}
       />
       <Brush
@@ -26,26 +30,21 @@ export default function FrontEnd() {
           isHovering ? "opacity-1 -translate-y-[50px]" : "opacity-0"
         )}
       />
-      <h3 className="text-3xl">Frontend</h3>
+      <h3 className="text-3xl">Front End</h3>
       <div className="flex gap-3 flex-wrap">
-        <Tooltip id="react" float>
-          React
-        </Tooltip>
-        <div
-          data-tooltip-id="react"
-          className="p-2 bg-[#61dafb50] rounded-xl flex justify-center items-center"
-        >
+        <SkillIcon name="React" id="react" className="bg-[#61dafb50]">
           <ReactOriginal size="40" />
-        </div>
-        <Tooltip id="tailwind" float>
-          Tailwind
-        </Tooltip>
-        <div
-          data-tooltip-id="tailwind"
-          className="p-2 bg-[#38bdf850] rounded-xl flex justify-center items-center"
-        >
+        </SkillIcon>
+        <SkillIcon name="Tailwind" id="tailwind" className="bg-[#38bdf850]">
           <TailwindcssOriginal size="40" />
-        </div>
+        </SkillIcon>
+        <SkillIcon
+          name="Framer Motion"
+          id="framer"
+          className="transition-all bg-[#ffffff60] dark:bg-[#2d374850]"
+        >
+          <FramermotionOriginal size="40" />
+        </SkillIcon>
       </div>
     </Card>
   );
