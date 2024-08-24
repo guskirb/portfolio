@@ -3,6 +3,7 @@ import {
   Css3Original,
   JavascriptOriginal,
   TypescriptOriginal,
+  AzuresqldatabasePlain,
 } from "devicons-react";
 import { Braces } from "lucide-react";
 import { Tooltip } from "react-tooltip";
@@ -14,10 +15,7 @@ export default function Languages() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
 
   return (
-    <Card
-      handleMouseOut={handleMouseOut}
-      handleMouseOver={handleMouseOver}
-    >
+    <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
       <Braces
         size={60}
         strokeWidth={2.5}
@@ -53,7 +51,7 @@ export default function Languages() {
           data-tooltip-id="js"
           className="p-2 bg-[#f0db4f50] rounded-xl flex justify-center items-center"
         >
-          <JavascriptOriginal size="40" data-tooltip-id="js" />
+          <JavascriptOriginal size="40" />
         </div>
         <Tooltip id="ts" float>
           TypeScript
@@ -62,7 +60,16 @@ export default function Languages() {
           data-tooltip-id="ts"
           className="p-2 bg-[#007acc50] rounded-xl flex justify-center items-center"
         >
-          <TypescriptOriginal size="40" data-tooltip-id="ts" />
+          <TypescriptOriginal size="40" />
+        </div>
+        <Tooltip id="sql" float>
+          SQL
+        </Tooltip>
+        <div
+          data-tooltip-id="sql"
+          className="p-2 bg-[#1f65b750] rounded-xl flex justify-center items-center"
+        >
+          <AzuresqldatabasePlain size="40" />
         </div>
       </div>
     </Card>
