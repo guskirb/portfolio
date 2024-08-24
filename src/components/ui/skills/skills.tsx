@@ -2,7 +2,7 @@ import BackEnd from "./back-end";
 import FrontEnd from "./front-end";
 import { Highlight } from "./highlight-text";
 import Languages from "./languages";
-import Other from "./other";
+import Tools from "./tools";
 
 export default function Skills() {
   return (
@@ -19,7 +19,7 @@ export default function Skills() {
         <BackEnd />
       </div>
       <div className="flex gap-10 flex-wrap justify-center">
-        <Other />
+        <Tools />
       </div>
     </div>
   );

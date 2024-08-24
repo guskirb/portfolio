@@ -13,7 +13,7 @@ import Card from "./card";
 import { cn } from "../../../lib/cn";
 import SkillIcon from "./skill-icon";
 
-export default function Other() {
+export default function Tools() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
   return (
     <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
@@ -25,7 +25,7 @@ export default function Other() {
           isHovering ? "opacity-1 -translate-y-10" : "opacity-0"
         )}
       />
-      <h3 className="text-3xl">Other</h3>
+      <h3 className="text-3xl">Tools</h3>
       <div className="flex gap-3 flex-wrap">
         <SkillIcon name="Git" id="git" className="bg-[#f34f2950]">
           <GitOriginal size="40" />
