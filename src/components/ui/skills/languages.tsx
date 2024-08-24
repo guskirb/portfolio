@@ -7,12 +7,28 @@ import {
 import { Braces } from "lucide-react";
 import { Tooltip } from "react-tooltip";
 import Card from "./card";
+import useHover from "../../../hooks/useHover";
+import { cn } from "../../../lib/cn";
 
 export default function Languages() {
+  const { isHovering, handleMouseOut, handleMouseOver } = useHover();
+
   return (
-    <Card color="bg-pink-300">
-      <Braces size={60} className="dark:text-white absolute rotate-6 translate-x-[230px] -translate-y-11"/>
-      <h3 className="text-2xl">Languages</h3>
+    <Card
+      color="bg-pink-300"
+      handleMouseOut={handleMouseOut}
+      handleMouseOver={handleMouseOver}
+    >
+      <Braces
+        size={60}
+        strokeWidth={2.5}
+        className={cn(
+          "absolute duration-300 dark:text-white rotate-12 translate-x-[230px] -translate-y-7",
+          isHovering ? "opacity-1 -translate-y-10" : "opacity-0"
+        )}
+      />
+
+      <h3 className="text-3xl">Languages</h3>
       <div className="flex gap-3 flex-wrap">
         <Tooltip id="html" float>
           HTML
