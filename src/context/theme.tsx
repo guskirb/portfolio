@@ -8,35 +8,34 @@ import {
 } from "react";
 
 export interface IThemeContext {
-  theme: string;
-  setTheme: Dispatch<SetStateAction<string>>;
+  darkMode: boolean;
+  setDarkMode: Dispatch<SetStateAction<boolean>>;
 }
 
 export const ThemeContext = createContext<IThemeContext>({
-  theme: "light",
-  setTheme: () => {},
+  darkMode: false,
+  setDarkMode: () => {},
 });
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState(
-    localStorage.theme ? localStorage.theme : "light"
-  );
+  const [darkMode, setDarkMode] = useState(localStorage.theme ? true : false);
 
   useEffect(() => {
-    setLocalStorageTheme(theme);
-  }, [theme]);
+    setLocalStorageTheme(darkMode);
+  }, [darkMode]);
 
-  const setLocalStorageTheme = (theme: string) => {
-    localStorage.setItem("theme", theme);
-    if (theme === "dark") {
+  const setLocalStorageTheme = (mode: boolean) => {
+    if (mode) {
       document.querySelector("body")?.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.querySelector("body")?.classList.remove("dark");
+      localStorage.removeItem("theme");
     }
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
       {children}
     </ThemeContext.Provider>
   );
