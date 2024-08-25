@@ -20,7 +20,7 @@ export default function BackEnd() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-blue-400 -rotate-12 translate-x-[260px] -translate-y-[20px]",
+          "absolute duration-300 text-blue-400 -rotate-12 translate-x-[160px] lg:translate-x-[260px] -translate-y-[20px]",
           isHovering ? "opacity-1 -translate-y-[40px]" : "opacity-0"
         )}
       />
@@ -28,8 +28,8 @@ export default function BackEnd() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-red-400 rotate-12 translate-x-[150px] -translate-y-[20px]",
-          isHovering ? "opacity-1 -translate-y-[40px]" : "opacity-0"
+          "absolute duration-300 text-red-400 lg:rotate-12 -rotate-12 -translate-x-[40px] lg:translate-x-[150px] -translate-y-[20px]",
+          isHovering ? "opacity-1 lg:-translate-y-[40px] -translate-y-[50px]" : "opacity-0"
         )}
       />
       <h3 className="text-3xl">Back End</h3>

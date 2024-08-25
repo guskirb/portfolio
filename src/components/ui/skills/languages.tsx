@@ -21,7 +21,7 @@ export default function Languages() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-yellow-300 rotate-12 translate-x-[250px] -translate-y-8",
+          "absolute duration-300 text-yellow-300 rotate-12 translate-x-[150px] lg:translate-x-[250px] -translate-y-8",
           isHovering ? "opacity-1 -translate-y-12" : "opacity-0"
         )}
       />

@@ -21,7 +21,7 @@ export default function Tools() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-purple-400 rotate-12 translate-x-[210px] -translate-y-7",
+          "absolute duration-300 text-purple-400 rotate-12 lg:translate-x-[210px] translate-x-[110px] -translate-y-7",
           isHovering ? "opacity-1 -translate-y-10" : "opacity-0"
         )}
       />
