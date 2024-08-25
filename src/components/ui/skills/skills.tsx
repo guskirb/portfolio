@@ -6,7 +6,7 @@ import Tools from "./tools";
 
 export default function Skills() {
   return (
-    <div className="p-5 flex flex-col w-full justify-center items-center gap-10 h-screen">
+    <div className="p-20 flex flex-col w-full justify-center items-center gap-10 min-h-screen">
       <h2 className="text-4xl dark:text-white">
         My <Highlight>Skills</Highlight>
       </h2>

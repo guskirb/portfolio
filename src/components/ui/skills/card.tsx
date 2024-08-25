@@ -13,7 +13,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className="skill-card text-white dark:text-[#262626] dark:bg-neutral-100 bg-neutral-900 duration-300 rounded-xl p-6 flex flex-col gap-5 hover:-translate-y-3"
+      className="skill-card text-white dark:text-[#262626] dark:bg-neutral-100 bg-neutral-900 duration-300 rounded-3xl p-8 flex flex-col gap-5 hover:-translate-y-3"
       onMouseEnter={handleMouseOver}
       onMouseLeave={handleMouseOut}
     >

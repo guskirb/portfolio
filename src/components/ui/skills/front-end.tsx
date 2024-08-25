@@ -18,8 +18,8 @@ export default function FrontEnd() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-pink-300 rotate-12 translate-x-[170px] translate-y-[70px]",
-          isHovering ? "opacity-1 translate-y-[100px]" : "opacity-0"
+          "absolute duration-300 text-pink-300 rotate-12 translate-x-[175px] translate-y-[80px]",
+          isHovering ? "opacity-1 translate-y-[105px]" : "opacity-0"
         )}
       />
       <Brush

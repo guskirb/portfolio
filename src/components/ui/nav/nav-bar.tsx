@@ -1,4 +1,4 @@
-import { House, PencilRuler } from "lucide-react";
+import { House, Lightbulb, PencilRuler } from "lucide-react";
 import { Link } from "react-scroll";
 import { Tooltip } from "react-tooltip";
 
@@ -15,7 +15,8 @@ export default function NavBar() {
         className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="home"
       >
-        <House />
+        <h2 className="hidden lg:block">Home</h2>
+        <House className="block lg:hidden" />
       </Link>
       <Tooltip id="skills">Skills</Tooltip>
       <Link
@@ -27,7 +28,21 @@ export default function NavBar() {
         className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="skills"
       >
-        <PencilRuler />
+        <h2 className="hidden lg:block">Skills</h2>
+        <PencilRuler className="block lg:hidden" />
+      </Link>
+      <Tooltip id="projects">Projects</Tooltip>
+      <Link
+        activeClass="active"
+        to="projects"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
+        data-tooltip-id="projects"
+      >
+        <h2 className="hidden lg:block">Projects</h2>
+        <Lightbulb className="block lg:hidden" />
       </Link>
     </div>
   );

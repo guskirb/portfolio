@@ -21,8 +21,8 @@ export default function Languages() {
         size={60}
         strokeWidth={2.5}
         className={cn(
-          "absolute duration-300 text-yellow-300 rotate-12 translate-x-[210px] -translate-y-7",
-          isHovering ? "opacity-1 -translate-y-10" : "opacity-0"
+          "absolute duration-300 text-yellow-300 rotate-12 translate-x-[250px] -translate-y-8",
+          isHovering ? "opacity-1 -translate-y-12" : "opacity-0"
         )}
       />
       <h3 className="text-3xl">Languages</h3>
