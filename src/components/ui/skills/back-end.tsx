@@ -33,7 +33,7 @@ export default function BackEnd() {
         )}
       />
       <h3 className="text-3xl">Back End</h3>
-      <div className="flex gap-3 flex-wrap">
+      <div className="flex gap-1 lg:gap-3 flex-wrap">
         <SkillIcon name="NodeJS" id="node" className="bg-[#67bb4a50]">
           <NodejsOriginal size="40" />
         </SkillIcon>

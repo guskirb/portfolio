@@ -26,7 +26,7 @@ export default function Tools() {
         )}
       />
       <h3 className="text-3xl">Tools</h3>
-      <div className="flex gap-3 flex-wrap">
+      <div className="flex gap-1 lg:gap-3 flex-wrap">
         <SkillIcon name="Git" id="git" className="bg-[#f34f2950]">
           <GitOriginal size="40" />
         </SkillIcon>

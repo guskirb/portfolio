@@ -26,7 +26,7 @@ export default function Languages() {
         )}
       />
       <h3 className="text-3xl">Languages</h3>
-      <div className="flex gap-3 flex-wrap">
+      <div className="flex gap-1 lg:gap-3 flex-wrap">
         <SkillIcon name="HTML" id="html" className="bg-[#e44d2650]">
           <Html5Original size="40" />
         </SkillIcon>

@@ -31,7 +31,7 @@ export default function FrontEnd() {
         )}
       />
       <h3 className="text-3xl">Front End</h3>
-      <div className="flex gap-3 flex-wrap">
+      <div className="flex gap-1 lg:gap-3 flex-wrap">
         <SkillIcon name="React" id="react" className="bg-[#61dafb50]">
           <ReactOriginal size="40" />
         </SkillIcon>
