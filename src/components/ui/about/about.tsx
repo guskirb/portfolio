@@ -3,7 +3,7 @@ import { Highlight } from "../highlight/highlight-text";
 
 export default function About() {
   return (
-    <div className="transition-all min-h-screen flex flex-col gap-20 justify-center items-center dark:text-white p-5">
+    <div className="transition-all min-h-screen flex flex-col gap-20 justify-center items-center dark:text-white p-12">
       <div className="flex flex-col gap-10 justify-center items-center">
         <h1 className="text-center text-2xl lg:text-4xl w-3/4 lg:w-1/2">
           I am a full-stack web developer with a passion for building{" "}

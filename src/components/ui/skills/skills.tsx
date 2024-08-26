@@ -7,7 +7,7 @@ import Tools from "./tools";
 
 export default function Skills() {
   return (
-    <div className="p-16 flex flex-col w-full justify-center items-center gap-10 min-h-screen">
+    <div className="p-12 flex flex-col w-full justify-center items-center gap-10 min-h-screen">
       <div className="transition-all hidden lg:block pointer-events-none translate-x-[220px] -translate-y-[265px] absolute">
         <ReactCurvedText
           startOffset={10}
