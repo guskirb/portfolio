@@ -23,7 +23,7 @@ export default function SkillIcon({
       <div
         data-tooltip-id={id}
         className={cn(
-          "p-2 bg-[#67bb4a50] rounded-xl flex justify-center items-center",
+          "shadow-md p-2 bg-[#67bb4a50] rounded-xl flex justify-center items-center",
           className
         )}
       >
