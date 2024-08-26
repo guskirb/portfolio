@@ -1,20 +1,16 @@
-interface ProjectThumbProps {
-  video: string;
-  title: string;
-}
-
-export default function ProjectThumb({ video, title }: ProjectThumbProps) {
+export default function ProjectThumb({ project }) {
   return (
-    <div className="relative group">
+    <div className="relative group flex flex-col gap-3 items-center">
       <video
-        className="w-[600px] rounded-3xl"
-        src={video}
+        className="lg:w-[700px] rounded-xl"
+        src={project.video}
         autoPlay
         muted
         loop
       />
-      <div className="hidden group-hover:flex top-0 absolute h-full w-full items-center justify-center">
-        <h2>{title}</h2>
+      <div className="flex flex-col items-center">
+        <h2 className="text-2xl dark:text-white">{project.title}</h2>
+        <p className="text-lg dark:text-white opacity-60">{project.type}</p>
       </div>
     </div>
   );

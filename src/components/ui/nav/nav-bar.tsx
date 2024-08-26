@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 
 export default function NavBar() {
   return (
-    <div className="dark:text-white h-fit fixed right-5 lg:right-10 top-1/2 -translate-y-[50%] z-20 flex flex-col gap-8">
+    <div className="dark:text-white h-fit fixed right-3 lg:right-10 top-1/2 -translate-y-[50%] z-20 flex flex-col gap-8">
       <Tooltip id="home">Home</Tooltip>
       <Link
         activeClass="active"
@@ -16,7 +16,7 @@ export default function NavBar() {
         data-tooltip-id="home"
       >
         <h2 className="hidden lg:block">Home</h2>
-        <House className="block lg:hidden" />
+        <House size={20} className="block lg:hidden" />
       </Link>
       <Tooltip id="about">About</Tooltip>
       <Link
@@ -29,7 +29,7 @@ export default function NavBar() {
         data-tooltip-id="about"
       >
         <h2 className="hidden lg:block">About</h2>
-        <UserRound className="block lg:hidden" />
+        <UserRound size={20} className="block lg:hidden" />
       </Link>
       <Tooltip id="skills">Skills</Tooltip>
       <Link
@@ -42,7 +42,7 @@ export default function NavBar() {
         data-tooltip-id="skills"
       >
         <h2 className="hidden lg:block">Skills</h2>
-        <PencilRuler className="block lg:hidden" />
+        <PencilRuler size={20} className="block lg:hidden" />
       </Link>
       <Tooltip id="projects">Projects</Tooltip>
       <Link
@@ -55,7 +55,7 @@ export default function NavBar() {
         data-tooltip-id="projects"
       >
         <h2 className="hidden lg:block">Projects</h2>
-        <Lightbulb className="block lg:hidden" />
+        <Lightbulb size={20} className="block lg:hidden" />
       </Link>
     </div>
   );

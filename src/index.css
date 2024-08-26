@@ -9,7 +9,6 @@
 
   color-scheme: light dark;
   color: #262626;
-  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -159,7 +158,7 @@ button:focus-visible {
 }
 
 .active {
-  scale: 1.5;
+  scale: 1.2;
   opacity: 1;
 }
 

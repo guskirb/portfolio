@@ -1,12 +1,18 @@
+import { projectData } from "../../../data/project-data";
 import ProjectThumb from "./project-thumb";
 
 export default function Projects() {
   return (
     <div className="min-h-screen p-16 flex flex-col w-full justify-center items-center gap-10">
-      <ProjectThumb
-        video="https://res.cloudinary.com/dsfwii9g8/video/upload/v1724626903/social-media_qwzzsb.mp4"
-        title="Connect Social Network Application"
-      />
+      <div>
+        <h2 className="text-4xl dark:text-white">Featured Projects</h2>
+        <p className="dark:text-white">(Original app names ahead!)</p>
+      </div>
+      <div className="flex flex-col gap-10">
+        {projectData.map((data) => (
+          <ProjectThumb project={data} />
+        ))}
+      </div>
     </div>
   );
 }
