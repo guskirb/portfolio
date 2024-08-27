@@ -279,3 +279,25 @@ textPath {
   background-size: 70%;
   background-repeat: no-repeat;
 }
+
+.waveSvg {
+  background: url("./assets/wave-light.svg");
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateY(-99%);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.dark .waveSvg{
+  background: url("./assets/wave-dark.svg");
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translateY(-99%);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
