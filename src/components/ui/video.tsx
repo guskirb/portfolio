@@ -5,7 +5,7 @@ export default function Video({ src }: { src: string }) {
   const { isVisible, targetRef } = useIsVisible(
     {
       root: null,
-      rootMargin: "200px",
+      rootMargin: "300px",
       threshold: 0.1,
     },
     false
