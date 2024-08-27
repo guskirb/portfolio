@@ -17,7 +17,7 @@ export default function Skills() {
           cx={150}
           cy={150}
           rx={65}
-          ry={105}
+          ry={113}
           textProps={{ style: { fontSize: "2.25rem" } }}
           tspanProps={{ dy: 35 }}
         />

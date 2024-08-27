@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="min-h-screen p-12 flex flex-col w-full justify-center items-center gap-10">
       <div className="flex flex-col items-center">
         <h2 className="text-4xl dark:text-white">Featured Projects</h2>
-        <p className="text-lg dark:text-white opacity-60">
+        <p className="text-lg font-light dark:text-white opacity-60">
           Hover for more info
         </p>
       </div>

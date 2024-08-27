@@ -2,8 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url("../public/font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: local("Roboto"), url("../public/font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: local("Roboto"),
+    url("../public/font/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: local("Roboto"),
+    url("../public/font/Roboto-Medium.ttf") format("truetype");
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -151,6 +174,7 @@ button {
 .active {
   scale: 1.2;
   opacity: 1;
+  font-weight: 500;
 }
 
 .wave {
@@ -291,7 +315,7 @@ textPath {
   background-repeat: no-repeat;
 }
 
-.dark .waveSvg{
+.dark .waveSvg {
   background: url("./assets/wave-dark.svg");
   position: absolute;
   top: 0;

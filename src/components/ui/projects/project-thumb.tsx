@@ -38,12 +38,12 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
             index % 2 === 0 ? "lg:items-end" : "lg:items-start"
           )}
         >
-          <h2 className="text-2xl dark:text-white">{project.title}</h2>
-          <p className="text-lg dark:text-white opacity-60">{project.type}</p>
+          <h2 className="text-2xl font-medium dark:text-white">{project.title}</h2>
+          <p className="text-lg font-light dark:text-white opacity-60">{project.type}</p>
         </div>
         <p
           className={cn(
-            "transition-all lg:w-[250px] dark:text-white text-center",
+            "transition-all lg:w-[280px] dark:text-white text-center",
             index % 2 === 0 ? "lg:text-end" : "lg:text-start"
           )}
         >
