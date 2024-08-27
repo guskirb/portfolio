@@ -210,5 +210,72 @@ textPath {
 }
 
 .dark .videoContainer {
-  box-shadow: rgba(148, 148, 148, 0.25) 0px 13px 27px -5px, rgba(43, 43, 43, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(148, 148, 148, 0.25) 0px 13px 27px -5px,
+    rgba(43, 43, 43, 0.3) 0px 8px 16px -8px;
+}
+
+.gitHubLogo {
+  background: url("./assets/github-light.svg");
+  background-color: #f8f8f8;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.dark .gitHubLogo {
+  background: url("./assets/github-dark.svg");
+  background-color: #171717;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.linkedInLogo {
+  background: url("./assets/linkedin-light.svg");
+  background-color: #f8f8f8;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.dark .linkedInLogo {
+  background: url("./assets/linkedin-dark.svg");
+  background-color: #171717;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.leetCodeLogo {
+  background: url("./assets/leetcode-light.svg");
+  background-color: #f8f8f8;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.dark .leetCodeLogo {
+  background: url("./assets/leetcode-dark.svg");
+  background-color: #171717;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
 }

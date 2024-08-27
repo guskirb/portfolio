@@ -1,4 +1,4 @@
-import { House, Lightbulb, PencilRuler, UserRound } from "lucide-react";
+import { House, Lightbulb, Mail, PencilRuler, UserRound } from "lucide-react";
 import { Link } from "react-scroll";
 import { Tooltip } from "react-tooltip";
 
@@ -12,7 +12,7 @@ export default function NavBar() {
         spy={true}
         smooth={true}
         duration={500}
-        className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
+        className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-150 cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="home"
       >
         <h2 className="hidden lg:block">Home</h2>
@@ -25,7 +25,7 @@ export default function NavBar() {
         spy={true}
         smooth={true}
         duration={500}
-        className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
+        className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-150 cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="about"
       >
         <h2 className="hidden lg:block">About</h2>
@@ -38,7 +38,7 @@ export default function NavBar() {
         spy={true}
         smooth={true}
         duration={500}
-        className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
+        className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-150 cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="skills"
       >
         <h2 className="hidden lg:block">Skills</h2>
@@ -51,11 +51,23 @@ export default function NavBar() {
         spy={true}
         smooth={true}
         duration={500}
-        className="hover:scale-150 transition-all cursor-pointer opacity-70 hover:opacity-100"
+        className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-150 cursor-pointer opacity-70 hover:opacity-100"
         data-tooltip-id="projects"
       >
         <h2 className="hidden lg:block">Projects</h2>
         <Lightbulb size={20} className="block lg:hidden" />
+      </Link>
+      <Link
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-150 cursor-pointer opacity-70 hover:opacity-100"
+        data-tooltip-id="projects"
+      >
+        <h2 className="hidden lg:block">Contact</h2>
+        <Mail size={20} className="block lg:hidden" />
       </Link>
     </div>
   );
