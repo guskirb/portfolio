@@ -16,7 +16,7 @@ export default function MotionDiv({ children, delay = 0.2 }: MotionDivProps) {
         y: 0,
         transition: { delay: delay, duration: 0.5 },
       }}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       {children}
     </motion.div>

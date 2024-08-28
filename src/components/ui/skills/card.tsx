@@ -22,7 +22,7 @@ export default function Card({
         y: 0,
         transition: { delay: 0.2 * index, duration: 0.5 },
       }}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       className="skill-card text-white dark:text-[#262626] dark:bg-neutral-100 bg-neutral-900 duration-300 rounded-3xl p-8 flex flex-col gap-5 hover:-translate-y-3"
       onMouseEnter={handleMouseOver}
       onMouseLeave={handleMouseOut}
