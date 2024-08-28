@@ -122,7 +122,7 @@ export const projectData = [
     title: "Weather Forecast App",
     type: "Weather Application",
     description:
-      "Retrieves data from a weather API and dynamically updates based on the selected location, with support for both Celsius and Fahrenheit units.",
+      "Retrieves data from a weather API and dynamically renders visuals based on the selected location's time and weather. Support for both Celsius and Fahrenheit units.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724884669/Untitled_video_-_Made_with_Clipchamp_xxfeh7.mp4",
     stack: ["html", "javascript", "css"],
