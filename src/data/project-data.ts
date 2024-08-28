@@ -55,7 +55,7 @@ export const projectData = [
       "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Compete against others, race the clock, and climb the leaderboard by spotting Wally.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724638527/wheres-wally_zg131y.mp4",
-    stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite"],
+    stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite", "jest"],
     preview: "https://wheres-wally-guskirb.netlify.app/",
     front: "https://github.com/guskirb/wheres-wally-clientTOP",
     back: "https://github.com/guskirb/wheres-wally-apiTOP",

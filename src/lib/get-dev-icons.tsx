@@ -2,6 +2,7 @@ import {
   Css3Original,
   ExpressOriginal,
   JavascriptOriginal,
+  JestPlain,
   MongodbOriginal,
   NodejsOriginal,
   PostgresqlOriginal,
@@ -28,12 +29,12 @@ export function getDevIcons(tech: string) {
           <TypescriptOriginal size="30" />
         </SkillIcon>
       );
-      case "css":
-        return (
-          <SkillIcon name="CSS" id="css" className="bg-[#1572b650]">
+    case "css":
+      return (
+        <SkillIcon name="CSS" id="css" className="bg-[#1572b650]">
           <Css3Original size="30" />
         </SkillIcon>
-        );
+      );
     case "react":
       return (
         <SkillIcon name="React" id="react" className="bg-[#61dafb50]">
@@ -62,12 +63,12 @@ export function getDevIcons(tech: string) {
           <ExpressOriginal size="30" />
         </SkillIcon>
       );
-      case "mongodb":
-        return (
-          <SkillIcon name="MongoDB" id="mongo" className="bg-[#5c9d5050]">
+    case "mongodb":
+      return (
+        <SkillIcon name="MongoDB" id="mongo" className="bg-[#5c9d5050]">
           <MongodbOriginal size="30" />
         </SkillIcon>
-        );
+      );
     case "postgresql":
       return (
         <SkillIcon name="PostgreSQL" id="postgresql" className="bg-[#33679150]">
@@ -84,10 +85,16 @@ export function getDevIcons(tech: string) {
           <PrismaOriginal size="30" />
         </SkillIcon>
       );
-      case "vite":
+    case "vite":
       return (
         <SkillIcon name="Vite" id="vite" className="bg-[#bc34fe50]">
           <VitejsOriginal size="30" />
+        </SkillIcon>
+      );
+    case "jest":
+      return (
+        <SkillIcon name="Jest" id="jest" className="bg-[#923f5450]">
+          <JestPlain size="30" />
         </SkillIcon>
       );
   }
