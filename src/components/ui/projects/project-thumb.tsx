@@ -5,9 +5,10 @@ import { cn } from "../../../lib/cn";
 import { getDevIcons } from "../../../lib/get-dev-icons";
 import Button from "../button";
 import Video from "../video";
+import { Project } from "../../../types/types";
 
 interface ProjectThumbProps {
-  project: any;
+  project: Project;
   index: number;
 }
 
