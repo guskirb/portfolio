@@ -5,24 +5,24 @@
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
-    url("../public/font/Roboto-Regular.ttf") format("truetype");
+    url("/font/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
-  src: local("Roboto"), url("../public/font/Roboto-Bold.ttf") format("truetype");
+  src: local("Roboto"), url("/font/Roboto-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 300;
   src: local("Roboto"),
-    url("../public/font/Roboto-Light.ttf") format("truetype");
+    url("/font/Roboto-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 500;
   src: local("Roboto"),
-    url("../public/font/Roboto-Medium.ttf") format("truetype");
+    url("/font/Roboto-Medium.ttf") format("truetype");
 }
 
 :root {

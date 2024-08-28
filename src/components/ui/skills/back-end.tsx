@@ -15,7 +15,7 @@ import SkillIcon from "./skill-icon";
 export default function BackEnd() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
   return (
-    <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
+    <Card index={3} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
       <Database
         size={60}
         strokeWidth={2.5}

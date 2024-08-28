@@ -13,7 +13,7 @@ import SkillIcon from "./skill-icon";
 export default function FrontEnd() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
   return (
-    <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
+    <Card index={2} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
       <Palette
         size={60}
         strokeWidth={2.5}

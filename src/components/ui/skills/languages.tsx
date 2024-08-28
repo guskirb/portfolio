@@ -16,7 +16,7 @@ export default function Languages() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
 
   return (
-    <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
+    <Card index={1} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
       <Braces
         size={60}
         strokeWidth={2.5}

@@ -16,7 +16,7 @@ import SkillIcon from "./skill-icon";
 export default function Tools() {
   const { isHovering, handleMouseOut, handleMouseOver } = useHover();
   return (
-    <Card handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
+    <Card index={4} handleMouseOut={handleMouseOut} handleMouseOver={handleMouseOver}>
       <GitPullRequestArrow
         size={60}
         strokeWidth={2.5}
