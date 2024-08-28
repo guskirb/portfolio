@@ -8,10 +8,10 @@ export default function Hero() {
         <HeroBg />
         <div className="pointer-events-none dark:text-white z-10 flex flex-col skew-y-[19deg] duration-700 text-xs lg:text-xl">
           <h1>
-            Hi!<span className="wave">👋</span>I'm Gus.
+            Hi!<span className="wave">👋</span>I'm Gus,
           </h1>
           <h1>
-            A<FlipWords words={["full stack", "front-end", "back-end"]} />
+            a<FlipWords words={["full stack", "front-end", "back-end"]} />
           </h1>
           <h1>web developer.</h1>
         </div>

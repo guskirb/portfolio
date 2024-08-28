@@ -57,6 +57,7 @@ export default function NavBar() {
         <h2 className="hidden lg:block text-center">Projects</h2>
         <Lightbulb size={20} className="block lg:hidden" />
       </Link>
+      <Tooltip id="contact">Contact Me</Tooltip>
       <Link
         activeClass="active"
         to="contact"
@@ -64,7 +65,7 @@ export default function NavBar() {
         smooth={true}
         duration={500}
         className="duration-700 bg-neutral-100 dark:bg-neutral-900 p-1 lg:px-2 rounded-lg hover:scale-125 cursor-pointer opacity-70 hover:opacity-100"
-        data-tooltip-id="projects"
+        data-tooltip-id="contact"
       >
         <h2 className="hidden lg:block text-center">Contact</h2>
         <Mail size={20} className="block lg:hidden" />
