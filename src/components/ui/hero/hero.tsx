@@ -18,6 +18,7 @@ export default function Hero() {
             <h1>web developer.</h1>
           </div>
         </MotionDiv>
+        <div className="arrow"/>
       </div>
     </div>
   );
