@@ -1,4 +1,5 @@
 import { Tooltip } from "react-tooltip";
+
 import { Highlight } from "../highlight/highlight-text";
 import MotionDiv from "../motion-div";
 
@@ -20,7 +21,9 @@ export default function About() {
         <MotionDiv delay={0.4}>
           <p className="text-center font-regular text-xl lg:text-2xl w-[90%] lg:w-1/2">
             My interest in web development began at the age of 14 when I created
-            a blog that eventually grew to attract over 80,000 followers. Since then, I've been dedicated to expanding my knowledge and remain eager to learn.
+            a blog that eventually grew to attract over 80,000 followers. Since
+            then, I've been dedicated to expanding my knowledge and remain eager
+            to learn.
           </p>
         </MotionDiv>
         <MotionDiv delay={0.5}>
@@ -47,6 +50,38 @@ export default function About() {
               <b>guskirb@gmail.com</b>
             </p>
           </Highlight>
+          <ul className="flex gap-8 mt-3">
+            <Tooltip id="githublogo" float>
+              GitHub
+            </Tooltip>
+            <MotionDiv delay={0.7}>
+              <a href="https://github.com/guskirb" data-tooltip-id="githublogo">
+                <li className="gitHubLogo hover:scale-[1.1] duration-700" />
+              </a>
+            </MotionDiv>
+            <Tooltip id="linkedin" float>
+              LinkedIn
+            </Tooltip>
+            <MotionDiv delay={0.8}>
+              <a
+                href="https://linkedin.com/in/guskirb"
+                data-tooltip-id="linkedin"
+              >
+                <li className="linkedInLogo hover:scale-[1.1] duration-700" />
+              </a>
+            </MotionDiv>
+            <Tooltip id="leetcode" float>
+              LeetCode
+            </Tooltip>
+            <MotionDiv delay={0.9}>
+              <a
+                href="https://leetcode.com/u/guskirb/"
+                data-tooltip-id="leetcode"
+              >
+                <li className="leetCodeLogo hover:scale-[1.1] duration-700" />
+              </a>
+            </MotionDiv>
+          </ul>
         </div>
       </MotionDiv>
     </div>

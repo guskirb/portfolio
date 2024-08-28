@@ -116,12 +116,14 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
             viewport={{ once: true, amount: 0.2 }}
             className="flex gap-2"
           >
-            <a className="w-full" href={project.front}>
-              <Button>
-                <Code />
-                Client
-              </Button>
-            </a>
+            {project.front ? (
+              <a className="w-full" href={project.front}>
+                <Button>
+                  <Code />
+                  Client
+                </Button>
+              </a>
+            ) : null}
             {project.back ? (
               <a className="w-full" href={project.back}>
                 <Button>
