@@ -6,22 +6,33 @@ export default function About() {
   return (
     <div className="transition-all min-h-screen flex flex-col gap-20 justify-center items-center dark:text-white p-12">
       <div className="flex flex-col gap-10 justify-center items-center">
-        <MotionDiv>
-          <p className="text-center text-2xl lg:text-4xl w-3/4 lg:w-1/2">
+        <div className="flex flex-col items-center">
+          <MotionDiv delay={0.2}>
+            <h2 className="text-4xl font-medium dark:text-white">About Me</h2>
+          </MotionDiv>
+        </div>
+        <MotionDiv delay={0.3}>
+          <p className="text-center font-regular text-xl lg:text-2xl w-3/4 lg:w-1/2">
             I am a full-stack web developer with a passion for building{" "}
             <b>visually stunning</b> and <b>highly functional</b> applications.
           </p>
         </MotionDiv>
-        <MotionDiv delay={0.3}>
-          <p className="text-center text-xl lg:text-3xl w-3/4 lg:w-1/2">
+        <MotionDiv delay={0.4}>
+          <p className="text-center font-regular text-xl lg:text-2xl w-[90%] lg:w-1/2">
+            My interest in web development began at the age of 14 when I created
+            a blog that eventually grew to attract over 80,000 followers. Since then, I've been dedicated to expanding my knowledge and remain eager to learn.
+          </p>
+        </MotionDiv>
+        <MotionDiv delay={0.5}>
+          <p className="text-center font-regular text-xl lg:text-2xl w-3/4 lg:w-1/2">
             When I'm not coding I'm probably at the gym or hanging out with my
             cat.😸
           </p>
         </MotionDiv>
       </div>
-      <MotionDiv delay={0.4}>
+      <MotionDiv delay={0.6}>
         <div className="flex flex-col gap-1 justify-center items-center w-3/4 lg:w-1/2">
-          <p className="text-xl lg:text-2xl">Get in touch</p>
+          <p className="text-xl lg:text-2xl">Get in touch:</p>
           <Tooltip className="z-20" id="email" float>
             Click to copy
           </Tooltip>
@@ -31,7 +42,7 @@ export default function About() {
               onClick={() => {
                 navigator.clipboard.writeText("guskirb@gmail.com");
               }}
-              className="text-2xl lg:text-4xl cursor-pointer"
+              className="text-2xl lg:text-3xl cursor-pointer"
             >
               <b>guskirb@gmail.com</b>
             </p>

@@ -55,7 +55,16 @@ export const projectData = [
       "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Compete against others, race the clock, and climb the leaderboard by spotting Wally.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724638527/wheres-wally_zg131y.mp4",
-    stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite", "jest"],
+    stack: [
+      "typescript",
+      "css",
+      "react",
+      "node",
+      "express",
+      "mongodb",
+      "vite",
+      "jest",
+    ],
     preview: "https://wheres-wally-guskirb.netlify.app/",
     front: "https://github.com/guskirb/wheres-wally-clientTOP",
     back: "https://github.com/guskirb/wheres-wally-apiTOP",
@@ -68,7 +77,7 @@ export const projectData = [
       "A shopping cart application that fetches data from a fake store API. Allows you to filter results, add and remove items from your cart and checkout.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724727058/shopping-cart_jd8hbp.mp4",
-    stack: ["javascript", "css", "react", "vite"],
+    stack: ["javascript", "css", "react", "vite", "jest"],
     preview: "https://main--strong-profiterole-d88f4a.netlify.app/",
     front: "https://github.com/guskirb/shopping-cartTOP",
   },

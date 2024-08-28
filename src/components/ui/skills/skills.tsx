@@ -20,7 +20,7 @@ export default function Skills() {
             cy={150}
             rx={65}
             ry={113}
-            textProps={{ style: { fontSize: "2.25rem" } }}
+            textProps={{ style: { fontSize: "2.25rem", fontWeight: "500" } }}
             tspanProps={{ dy: 35 }}
           />
         </MotionDiv>

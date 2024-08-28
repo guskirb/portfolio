@@ -26,14 +26,15 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
           y: 0,
           transition: { delay: 0.2, duration: 0.5 },
         }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="videoContainer flex gap-2 relative group rounded-xl overflow-hidden duration-500 hover:scale-[0.97]"
+        viewport={{ once: true, amount: 0.1 }}
       >
-        <Video src={project.video} />
-        <div className="transition-all absolute flex flex-wrap w-full h-full justify-center items-center content-center gap-2 opacity-0 group-hover:opacity-100 group-hover:dark:bg-[#f5f5f570] group-hover:bg-[#17171770] duration-500 rounded-xl">
-          {project.stack
-            ? project.stack.map((item: string) => getDevIcons(item))
-            : null}
+        <div className="videoContainer flex gap-2 relative group rounded-xl overflow-hidden duration-500 hover:scale-[0.97]">
+          <Video src={project.video} />
+          <div className="transition-all absolute flex flex-wrap w-full h-full justify-center items-center content-center gap-2 opacity-0 group-hover:opacity-100 group-hover:dark:bg-[#f5f5f570] group-hover:bg-[#17171770] duration-500 rounded-xl">
+            {project.stack
+              ? project.stack.map((item: string) => getDevIcons(item))
+              : null}
+          </div>
         </div>
       </motion.div>
       <div
