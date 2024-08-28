@@ -1,6 +1,7 @@
 import {
   Css3Original,
   ExpressOriginal,
+  Html5Original,
   JavascriptOriginal,
   JestPlain,
   MongodbOriginal,
@@ -27,6 +28,12 @@ export function getDevIcons(tech: string) {
       return (
         <SkillIcon name="TypeScript" id="ts" className="bg-[#007acc50]">
           <TypescriptOriginal size="30" />
+        </SkillIcon>
+      );
+    case "html":
+      return (
+        <SkillIcon name="HTML" id="html" className="bg-[#e44d2650]">
+          <Html5Original size="30" />
         </SkillIcon>
       );
     case "css":

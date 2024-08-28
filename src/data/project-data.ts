@@ -70,6 +70,18 @@ export const projectData = [
     back: "https://github.com/guskirb/wheres-wally-apiTOP",
   },
   {
+    id: "music-inventory",
+    title: "Music Inventory",
+    type: "Inventory Management Application",
+    description:
+      "An application that uses EJS for server-side rendering and manages data from a MongoDB database, utilizing Express as an API.",
+    video:
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724882933/inventory_tiuoqk.mp4",
+    stack: ["html", "css", "javascript", "express", "mongodb"],
+    preview: "https://quartz-holly-knot.glitch.me/",
+    back: "https://github.com/guskirb/inventory-applicationTOP",
+  },
+  {
     id: "shopping-cart",
     title: "Tech Store",
     type: "Mock Shopping Cart",
@@ -92,5 +104,29 @@ export const projectData = [
     stack: ["javascript", "css", "react", "vite"],
     preview: "https://main--starlit-kulfi-eb679c.netlify.app/",
     front: "https://github.com/guskirb/CV-applicationTOP",
+  },
+  {
+    id: "battleships",
+    title: "Battleships",
+    type: "Game Application",
+    description:
+      "Allows the user to choose between two CPU difficulty settings. Created using vanilla JavaScript DOM manipulation.",
+    video:
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724884034/Untitled_video_-_Made_with_Clipchamp_pdnu1t.mp4",
+    stack: ["html", "javascript", "css", "jest"],
+    preview: "https://guskirb.github.io/battleshipTOP/",
+    front: "https://github.com/guskirb/battleshipTOP",
+  },
+  {
+    id: "weather",
+    title: "Weather Forecast App",
+    type: "Weather Application",
+    description:
+      "Retrieves data from a weather API and dynamically updates based on the selected location, with support for both Celsius and Fahrenheit units.",
+    video:
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724884669/Untitled_video_-_Made_with_Clipchamp_xxfeh7.mp4",
+    stack: ["html", "javascript", "css"],
+    preview: "https://guskirb.github.io/weather-appTOP/",
+    front: "https://github.com/guskirb/weather-appTOP",
   },
 ];
