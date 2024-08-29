@@ -8,12 +8,12 @@ export default function Projects() {
     <div className="min-h-screen p-12 flex flex-col w-full justify-center items-center gap-10">
       <div className="flex flex-col items-center">
         <MotionDiv delay={0.2}>
-          <h2 className="text-4xl font-medium dark:text-white">
+          <h2 className="text-4xl font-medium dark:text-white text-center">
             Featured Projects
           </h2>
         </MotionDiv>
         <MotionDiv delay={0.4}>
-          <p className="text-lg dark:text-white opacity-60">
+          <p className="text-lg dark:text-white opacity-60 text-center">
             Hover for more info
           </p>
         </MotionDiv>

@@ -6,6 +6,7 @@ import { getDevIcons } from "../../../lib/get-dev-icons";
 import Button from "../button";
 import Video from "../video";
 import { Project } from "../../../types/types";
+import { Fragment } from "react/jsx-runtime";
 
 interface ProjectThumbProps {
   project: Project;
@@ -33,7 +34,9 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
           <Video src={project.video} />
           <div className="transition-all absolute flex flex-wrap w-full h-full justify-center items-center content-center gap-2 opacity-0 group-hover:opacity-100 group-hover:dark:bg-[#f5f5f570] group-hover:bg-[#17171770] duration-500 rounded-xl">
             {project.stack
-              ? project.stack.map((item: string) => getDevIcons(item))
+              ? project.stack.map((item: string) => (
+                  <Fragment key={item}>{getDevIcons(item)}</Fragment>
+                ))
               : null}
           </div>
         </div>
