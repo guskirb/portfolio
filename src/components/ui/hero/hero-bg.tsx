@@ -1,24 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { cn } from "../../../lib/cn";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   const rows = new Array(50).fill(1);
   const cols = new Array(50).fill(1);
-  const colors = [
-    "--sky-300",
-    "--pink-300",
-    "--green-300",
-    "--yellow-300",
-    "--red-300",
-    "--purple-300",
-    "--blue-300",
-    "--indigo-300",
-    "--violet-300",
-  ];
-  const getRandomColor = () => {
-    return colors[Math.floor(Math.random() * colors.length)];
-  };
 
   return (
     <div
@@ -32,21 +17,15 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
       {...rest}
     >
       {rows.map((_, i) => (
-        <motion.div
+        <div
           key={`row` + i}
-          className="w-20 h-10  border-l  border-neutral-200  relative"
+          className="w-20 h-10 transition-all border-l border-neutral-200 dark:border-neutral-800 relative"
         >
           {cols.map((_, j) => (
-            <motion.div
-              whileHover={{
-                backgroundColor: `var(${getRandomColor()})`,
-                transition: { duration: 0 },
-              }}
-              animate={{
-                transition: { duration: 2 },
-              }}
+            <div
+              
               key={`col` + j}
-              className="w-20 h-10  border-r border-t border-neutral-200  relative"
+              className="w-20 h-10  border-r border-t border-neutral-200 dark:border-neutral-800 relative"
             >
               {j % 2 === 0 && i % 2 === 0 ? (
                 <svg
@@ -55,7 +34,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="absolute h-6 w-10 -top-[13px] -left-[22px] text-neutral-300  stroke-[1px] pointer-events-none"
+                  className="absolute h-6 w-10 -top-[13px] -left-[22px] text-neutral-300 dark:text-neutral-700 stroke-[1px] pointer-events-none"
                 >
                   <path
                     strokeLinecap="round"
@@ -64,9 +43,9 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                   />
                 </svg>
               ) : null}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       ))}
     </div>
   );
