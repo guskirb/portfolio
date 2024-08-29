@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 import MotionDiv from "../motion-div";
 import { FlipWords } from "./flip-words";
 import { HeroBg } from "./hero-bg";
@@ -13,12 +15,19 @@ export default function Hero() {
               Hi!<span className="wave">👋</span>I'm Gus,
             </h1>
             <h1>
-              a<FlipWords words={["full stack", "front-end", "back-end"]} />
+              a<FlipWords words={["full-stack", "front-end", "back-end"]} />
             </h1>
             <h1>web developer.</h1>
           </div>
         </MotionDiv>
-        <div className="arrow"/>
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="arrow cursor-pointer"
+        />
       </div>
     </div>
   );
