@@ -6,7 +6,7 @@ export const projectData = [
     description:
       "An application that allows users to create a profile, write and comment on posts and connect with others.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724626903/social-media_qwzzsb.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316967/social-media_sk5ggb.mp4",
     stack: [
       "typescript",
       "react",
@@ -28,7 +28,7 @@ export const projectData = [
     description:
       "A website that lets users set up chatrooms and interact with others through direct messaging.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724635163/chatroom_kpyual.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316950/chatroom_rusn68.mp4",
     stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite"],
     preview: "https://chat-app-guskirb.netlify.app/",
     front: "https://github.com/guskirb/messaging-app-clientTOP",
@@ -41,7 +41,7 @@ export const projectData = [
     description:
       "A blog application that enables users to create an account, make and edit posts with a rich text editor and comment on content.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724636293/blog_ikclhx.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316990/blog_xpqrce.mp4",
     stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite"],
     preview: "https://main--guskirb-blog.netlify.app/",
     front: "https://github.com/guskirb/blog-clientTOP",
@@ -54,7 +54,7 @@ export const projectData = [
     description:
       "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Compete against others, race the clock, and climb the leaderboard by spotting Wally.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724638527/wheres-wally_zg131y.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316993/wheres-wally_spfp1n.mp4",
     stack: [
       "typescript",
       "css",
@@ -76,7 +76,7 @@ export const projectData = [
     description:
       "An application that uses EJS for server-side rendering and manages data from a MongoDB database, utilizing Express as an API.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724882933/inventory_tiuoqk.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316963/inventory_lqcctd.mp4",
     stack: ["html", "css", "javascript", "express", "mongodb"],
     preview: "https://quartz-holly-knot.glitch.me/",
     back: "https://github.com/guskirb/inventory-applicationTOP",
@@ -88,7 +88,7 @@ export const projectData = [
     description:
       "A shopping cart application that fetches data from a fake store API. Allows you to filter results, add and remove items from your cart and checkout.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724727058/shopping-cart_jd8hbp.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316975/shopping-cart_uvkc1f.mp4",
     stack: ["javascript", "css", "react", "vite", "jest"],
     preview: "https://main--strong-profiterole-d88f4a.netlify.app/",
     front: "https://github.com/guskirb/shopping-cartTOP",
@@ -100,7 +100,7 @@ export const projectData = [
     description:
       "Allows the user to generate a CV based on inputted data. Change text and accent colours and upload a photo.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724728214/CV-builder_qpded0.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316972/CV-builder_xgjsxx.mp4",
     stack: ["javascript", "css", "react", "vite"],
     preview: "https://main--starlit-kulfi-eb679c.netlify.app/",
     front: "https://github.com/guskirb/CV-applicationTOP",
@@ -112,7 +112,7 @@ export const projectData = [
     description:
       "Allows the user to choose between two CPU difficulty settings. Created using vanilla JavaScript DOM manipulation.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724884034/Untitled_video_-_Made_with_Clipchamp_pdnu1t.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316961/battleships_cmfbib.mp4",
     stack: ["html", "javascript", "css", "jest"],
     preview: "https://guskirb.github.io/battleshipTOP/",
     front: "https://github.com/guskirb/battleshipTOP",
@@ -124,7 +124,7 @@ export const projectData = [
     description:
       "Retrieves data from a weather API and dynamically renders visuals based on the selected location's time and weather. Support for both Celsius and Fahrenheit units.",
     video:
-      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1724884669/Untitled_video_-_Made_with_Clipchamp_xxfeh7.mp4",
+      "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316951/weather-app_oegxxv.mp4",
     stack: ["html", "javascript", "css"],
     preview: "https://guskirb.github.io/weather-appTOP/",
     front: "https://github.com/guskirb/weather-appTOP",
