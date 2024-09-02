@@ -10,7 +10,6 @@ export default function Hero() {
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   function handleWindowSizeChange() {
-    console.log(width);
     setWidth(window.innerWidth);
   }
   useEffect(() => {
