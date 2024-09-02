@@ -47,43 +47,28 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
           index % 2 === 0 ? "lg:items-end" : "lg:items-start"
         )}
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { delay: 0.3, duration: 0.5 },
+          }}
+          viewport={{ once: true, amount: 0.2 }}
           className={cn(
             "flex flex-col items-center",
             index % 2 === 0 ? "lg:items-end" : "lg:items-start"
           )}
         >
-          <motion.h2
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.3, duration: 0.5 },
-            }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="text-2xl font-medium dark:text-white"
-          >
+          <h2 className="text-2xl font-medium dark:text-white">
             {project.title}
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.4, duration: 0.5 },
-            }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="text-lg dark:text-white opacity-60"
-          >
-            {project.type}
-          </motion.p>
-        </div>
+          </h2>
+          <p className="text-lg dark:text-white opacity-60">{project.type}</p>
+        </motion.div>
         <motion.p
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            y: 0,
-            transition: { delay: 0.5, duration: 0.5 },
+            transition: { delay: 0.4, duration: 0.5 },
           }}
           viewport={{ once: true, amount: 0.2 }}
           className={cn(
@@ -95,11 +80,10 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
         </motion.p>
         <div className="flex flex-col gap-2">
           <motion.a
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              y: 0,
-              transition: { delay: 0.6, duration: 0.5 },
+              transition: { delay: 0.5, duration: 0.5 },
             }}
             viewport={{ once: true, amount: 0.2 }}
             className="w-full"
@@ -111,11 +95,10 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
             </Button>
           </motion.a>
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              y: 0,
-              transition: { delay: 0.7, duration: 0.5 },
+              transition: { delay: 0.6, duration: 0.5 },
             }}
             viewport={{ once: true, amount: 0.2 }}
             className="flex gap-2"
