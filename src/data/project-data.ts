@@ -52,7 +52,7 @@ export const projectData = [
     title: "Where's Wally?",
     type: "Photo Tagging Application",
     description:
-      "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Compete against others, race the clock, and climb the leaderboard by spotting Wally.",
+      "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Logs the player's name and time on a leaderboard.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316993/wheres-wally_spfp1n.mp4",
     stack: [
