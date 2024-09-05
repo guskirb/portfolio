@@ -10,19 +10,30 @@ import {
 export interface IThemeContext {
   darkMode: boolean;
   setDarkMode: Dispatch<SetStateAction<boolean>>;
+  animation: boolean;
+  setAnimation: Dispatch<SetStateAction<boolean>>;
 }
 
 export const ThemeContext = createContext<IThemeContext>({
   darkMode: false,
   setDarkMode: () => {},
+  animation: true,
+  setAnimation: () => {},
 });
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
   const [darkMode, setDarkMode] = useState(localStorage.theme ? true : false);
+  const [animation, setAnimation] = useState(
+    localStorage.animation ? true : false
+  );
 
   useEffect(() => {
     setLocalStorageTheme(darkMode);
   }, [darkMode]);
+
+  useEffect(() => {
+    setAnimationTheme(animation);
+  }, [animation]);
 
   const setLocalStorageTheme = (mode: boolean) => {
     if (mode) {
@@ -34,8 +45,18 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     }
   };
 
+  const setAnimationTheme = (mode: boolean) => {
+    if (mode) {
+      localStorage.removeItem("animation");
+    } else {
+      localStorage.setItem("animation", "false");
+    }
+  };
+
   return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+    <ThemeContext.Provider
+      value={{ darkMode, setDarkMode, animation, setAnimation }}
+    >
       {children}
     </ThemeContext.Provider>
   );
