@@ -7,6 +7,7 @@ import Button from "../button";
 import Video from "../video";
 import { Project } from "../../../types/types";
 import { Fragment } from "react/jsx-runtime";
+import useTheme from "../../../hooks/useTheme";
 
 interface ProjectThumbProps {
   project: Project;
@@ -14,6 +15,8 @@ interface ProjectThumbProps {
 }
 
 export default function ProjectThumb({ project, index }: ProjectThumbProps) {
+  const { animation } = useTheme();
+
   return (
     <div
       className={cn(
@@ -22,13 +25,17 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
       )}
     >
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0.2, duration: 0.5 },
-        }}
-        viewport={{ once: true, amount: 0.1 }}
+        initial={animation ? { opacity: 0, y: -20 } : {}}
+        whileInView={
+          animation
+            ? {
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.2, duration: 0.5 },
+              }
+            : {}
+        }
+        viewport={animation ? { once: true, amount: 0.1 } : {}}
       >
         <div className="videoContainer flex gap-2 relative group rounded-xl overflow-hidden duration-500 hover:scale-[0.97]">
           <Video src={project.video} />
@@ -48,12 +55,16 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
         )}
       >
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-            transition: { delay: 0.3, duration: 0.5 },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          initial={animation ? { opacity: 0 } : {}}
+          whileInView={
+            animation
+              ? {
+                  opacity: 1,
+                  transition: { delay: 0.3, duration: 0.5 },
+                }
+              : {}
+          }
+          viewport={animation ? { once: true, amount: 0.2 } : {}}
           className={cn(
             "flex flex-col items-center",
             index % 2 === 0 ? "lg:items-end" : "lg:items-start"
@@ -65,12 +76,16 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
           <p className="text-lg dark:text-white opacity-60">{project.type}</p>
         </motion.div>
         <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-            transition: { delay: 0.4, duration: 0.5 },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          initial={animation ? { opacity: 0 } : {}}
+          whileInView={
+            animation
+              ? {
+                  opacity: 1,
+                  transition: { delay: 0.4, duration: 0.5 },
+                }
+              : {}
+          }
+          viewport={animation ? { once: true, amount: 0.2 } : {}}
           className={cn(
             "transition-all lg:w-[280px] xl:w-[350px] dark:text-white text-center",
             index % 2 === 0 ? "lg:text-end" : "lg:text-start"
@@ -80,12 +95,16 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
         </motion.p>
         <div className="flex flex-col gap-2">
           <motion.a
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { delay: 0.5, duration: 0.5 },
-            }}
-            viewport={{ once: true, amount: 0.2 }}
+            initial={animation ? { opacity: 0 } : {}}
+            whileInView={
+              animation
+                ? {
+                    opacity: 1,
+                    transition: { delay: 0.5, duration: 0.5 },
+                  }
+                : {}
+            }
+            viewport={animation ? { once: true, amount: 0.2 } : {}}
             className="w-full"
             href={project.preview}
           >
@@ -95,12 +114,16 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
             </Button>
           </motion.a>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              transition: { delay: 0.6, duration: 0.5 },
-            }}
-            viewport={{ once: true, amount: 0.2 }}
+            initial={animation ? { opacity: 0 } : {}}
+            whileInView={
+              animation
+                ? {
+                    opacity: 1,
+                    transition: { delay: 0.6, duration: 0.5 },
+                  }
+                : {}
+            }
+            viewport={animation ? { once: true, amount: 0.2 } : {}}
             className="flex gap-2"
           >
             {project.front ? (

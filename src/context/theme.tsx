@@ -24,7 +24,7 @@ export const ThemeContext = createContext<IThemeContext>({
 export default function ThemeProvider({ children }: { children: ReactNode }) {
   const [darkMode, setDarkMode] = useState(localStorage.theme ? true : false);
   const [animation, setAnimation] = useState(
-    localStorage.animation ? true : false
+    localStorage.animation ? false : true
   );
 
   useEffect(() => {

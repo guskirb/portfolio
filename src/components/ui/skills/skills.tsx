@@ -25,7 +25,6 @@ export default function Skills() {
           />
         </MotionDiv>
       </div>
-
       <h2 className="lg:hidden text-4xl dark:text-white">My Skills</h2>
       <div className="transition-all flex gap-10 flex-wrap justify-center lg:-translate-x-[100px]">
         <Languages />
