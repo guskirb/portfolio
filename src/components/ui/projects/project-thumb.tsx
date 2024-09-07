@@ -25,7 +25,7 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
       )}
     >
       <motion.div
-        initial={animation ? { opacity: 0, y: -20 } : {}}
+        initial={animation ? { opacity: 0, y: -20 } : { opacity: 1, y: 0 }}
         whileInView={
           animation
             ? {
@@ -33,7 +33,10 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
                 y: 0,
                 transition: { delay: 0.2, duration: 0.5 },
               }
-            : {}
+            : {
+                opacity: 1,
+                transition: { delay: 0, duration: 0 },
+              }
         }
         viewport={animation ? { once: true, amount: 0.1 } : {}}
       >
@@ -55,14 +58,17 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
         )}
       >
         <motion.div
-          initial={animation ? { opacity: 0 } : {}}
+          initial={animation ? { opacity: 0 } : { opacity: 1, y: 0 }}
           whileInView={
             animation
               ? {
                   opacity: 1,
                   transition: { delay: 0.3, duration: 0.5 },
                 }
-              : {}
+              : {
+                  opacity: 1,
+                  transition: { delay: 0, duration: 0 },
+                }
           }
           viewport={animation ? { once: true, amount: 0.2 } : {}}
           className={cn(
@@ -76,14 +82,17 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
           <p className="text-lg dark:text-white opacity-60">{project.type}</p>
         </motion.div>
         <motion.p
-          initial={animation ? { opacity: 0 } : {}}
+          initial={animation ? { opacity: 0 } : { opacity: 1, y: 0 }}
           whileInView={
             animation
               ? {
                   opacity: 1,
                   transition: { delay: 0.4, duration: 0.5 },
                 }
-              : {}
+              : {
+                  opacity: 1,
+                  transition: { delay: 0, duration: 0 },
+                }
           }
           viewport={animation ? { once: true, amount: 0.2 } : {}}
           className={cn(
@@ -95,14 +104,17 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
         </motion.p>
         <div className="flex flex-col gap-2">
           <motion.a
-            initial={animation ? { opacity: 0 } : {}}
+            initial={animation ? { opacity: 0 } : { opacity: 1, y: 0 }}
             whileInView={
               animation
                 ? {
                     opacity: 1,
                     transition: { delay: 0.5, duration: 0.5 },
                   }
-                : {}
+                : {
+                    opacity: 1,
+                    transition: { delay: 0, duration: 0 },
+                  }
             }
             viewport={animation ? { once: true, amount: 0.2 } : {}}
             className="w-full"
@@ -114,14 +126,17 @@ export default function ProjectThumb({ project, index }: ProjectThumbProps) {
             </Button>
           </motion.a>
           <motion.div
-            initial={animation ? { opacity: 0 } : {}}
+            initial={animation ? { opacity: 0 } : { opacity: 1, y: 0 }}
             whileInView={
               animation
                 ? {
                     opacity: 1,
                     transition: { delay: 0.6, duration: 0.5 },
                   }
-                : {}
+                : {
+                    opacity: 1,
+                    transition: { delay: 0, duration: 0 },
+                  }
             }
             viewport={animation ? { once: true, amount: 0.2 } : {}}
             className="flex gap-2"

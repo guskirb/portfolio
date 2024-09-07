@@ -13,7 +13,7 @@ export default function MotionDiv({ children, delay = 0.2 }: MotionDivProps) {
   return (
     <motion.div
       className="flex justify-center items-center w-full h-full"
-      initial={animation ? { opacity: 0, y: -20 } : {}}
+      initial={animation ? { opacity: 0, y: -20 } : { opacity: 1, y: 0 }}
       whileInView={
         animation
           ? {
@@ -21,7 +21,10 @@ export default function MotionDiv({ children, delay = 0.2 }: MotionDivProps) {
               y: 0,
               transition: { delay: delay, duration: 0.5 },
             }
-          : {}
+          : {
+              opacity: 1,
+              transition: { delay: 0, duration: 0 },
+            }
       }
       viewport={animation ? { once: true, amount: 0.3 } : {}}
     >
