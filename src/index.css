@@ -384,22 +384,33 @@ textPath {
 }
 
 .switch {
-  --line: #505162;
-  --dot: #f7f8ff;
-  --circle: #9ea0be;
+  --line: #171717;
+  --dot: #171717be;
+  --circle: #171717be;
   --duration: 0.3s;
   --text: #9ea0be;
   cursor: pointer;
 }
+
+.dark .switch {
+  --line: #f5f5f5;
+  --dot: #f5f5f5be;
+  --circle: #f5f5f5be;
+  --duration: 0.3s;
+  --text: #9ea0be;
+  cursor: pointer;
+}
+
 .switch input {
   display: none;
 }
 .switch input + div {
   position: relative;
 }
-.switch input + div:before, .switch input + div:after {
+.switch input + div:before,
+.switch input + div:after {
   --s: 1;
-  content: '';
+  content: "";
   position: absolute;
   height: 4px;
   top: 10px;
@@ -428,7 +439,7 @@ textPath {
   --x: 0;
   --b: var(--circle);
   --s: 4px;
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
