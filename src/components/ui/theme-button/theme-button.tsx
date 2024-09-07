@@ -25,7 +25,7 @@ export default function ThemeButton() {
         <label className="switch">
           <input
             type="checkbox"
-            defaultChecked={animation}
+            defaultChecked={!animation}
             onChange={() => setAnimation(!animation)}
           />
           <div>
