@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="mt-[100px] relative w-full dark:bg-neutral-100 bg-neutral-900 text-white dark:text-[#262626] flex flex-col gap-10 justify-center items-center p-20">
       <svg className="waveSvg" />
-      <h1>Contact Me</h1>
+      <h1 className="text-center">Contact Me</h1>
       <div>
         <ul className="flex gap-8">
           <Tooltip id="githublogo" float>
