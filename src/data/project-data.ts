@@ -74,7 +74,7 @@ export const projectData = [
     title: "Music Inventory",
     type: "Inventory Management Application",
     description:
-      "An application that uses EJS for server-side rendering and manages data from a MongoDB database, utilizing Express as an API.",
+      "An application that uses EJS for server-side rendering and manages data from a MongoDB database, utilizing Express on the back end.",
     video:
       "https://res.cloudinary.com/dsfwii9g8/video/upload/v1725316963/inventory_lqcctd.mp4",
     stack: ["html", "css", "javascript", "express", "mongodb"],

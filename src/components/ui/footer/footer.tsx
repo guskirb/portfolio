@@ -41,8 +41,8 @@ export default function Footer() {
         </ul>
       </div>
       <div className="flex flex-col items-center">
-        <p className="opacity-60">© 2024 Angus Kirby</p>
-        <p className="text-sm opacity-60">
+        <p className="opacity-60 text-center">© 2024 Angus Kirby</p>
+        <p className="text-sm opacity-60 text-center">
           Made with love using React and Tailwind
         </p>
       </div>
