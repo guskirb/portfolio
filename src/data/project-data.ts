@@ -4,7 +4,7 @@ export const projectData = [
     title: "Connect",
     type: "Social Network Application",
     description:
-      "A social media application made using React and Tailwind on the front end. The back end is a REST API made with Node.js and Express, using Json Web Tokens for authentication.",
+      "A social media application made using React and Tailwind on the front end. The back end is a REST API built with Node.js and Express, using Json Web Tokens for authentication.",
     video:
       "https://live.staticflickr.com/video/53991903473/a99245b8be/720p.mp4?s=eyJpIjo1Mzk5MTkwMzQ3MywiZSI6MTcyNjU5NTU0OCwicyI6ImNlNDQ2ZDA4MTU5YTlhOTQ0YzYyZjlhZmUxYjQ4ZGE2N2EyN2VmMmIiLCJ2IjoxfQ",
     stack: [
