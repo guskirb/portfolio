@@ -4,7 +4,7 @@ export const projectData = [
     title: "Connect",
     type: "Social Network Application",
     description:
-      "An application that allows users to create a profile, write and comment on posts and connect with others.",
+      "A social media application made using React and Tailwind on the front end. The back end is a REST API made with Node.js and Express, using Json Web Tokens for authentication.",
     video:
       "https://live.staticflickr.com/video/53991903473/a99245b8be/720p.mp4?s=eyJpIjo1Mzk5MTkwMzQ3MywiZSI6MTcyNjIyNzY4OSwicyI6ImNiN2ZmZTU3ZjI5YjhiZDJhNjkwYjAxZmNlZjk3NTlkYWE5MzMyOTMiLCJ2IjoxfQ",
     stack: [
@@ -26,7 +26,7 @@ export const projectData = [
     title: "Chat",
     type: "Chatroom Application",
     description:
-      "A website that lets users set up chatrooms and interact with others through direct messaging.",
+      "A messaging application developed using React and Tailwind for the UI, featuring a REST API built with Node.js and Express, which queries a MongoDB database.",
     video:
       "https://live.staticflickr.com/video/53991903598/d938990ea2/720p.mp4?s=eyJpIjo1Mzk5MTkwMzU5OCwiZSI6MTcyNjIyNzczNywicyI6ImE2NDg3ODI1ZmIyYWQxMDk3OTc4NDVjMTg4ZmE5ZmJiZWRkNjNiZTIiLCJ2IjoxfQ",
     stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite"],
@@ -39,7 +39,7 @@ export const projectData = [
     title: "Blog",
     type: "Blog Application",
     description:
-      "A blog application that enables users to create an account, make and edit posts with a rich text editor and comment on content.",
+      "A blogging application developed with React, Node.js, and Express. The backend features a JWT authentication REST API that connects to a MongoDB database.",
     video:
       "https://live.staticflickr.com/video/53991983799/f4f6a1048d/720p.mp4?s=eyJpIjo1Mzk5MTk4Mzc5OSwiZSI6MTcyNjIyNzc1MCwicyI6ImE2MDYzMzc3NjkyNjI0NTZkNzIwNTQ0N2M1NTA0OTQyMWEyOGU5NTgiLCJ2IjoxfQ",
     stack: ["typescript", "css", "react", "node", "express", "mongodb", "vite"],
@@ -52,7 +52,7 @@ export const projectData = [
     title: "Where's Wally?",
     type: "Photo Tagging Application",
     description:
-      "A Where's Wally photo-tagging game where players search for Wally and friends in detailed, high-resolution images. Logs the player's name and time on a leaderboard.",
+      "A 'Where's Wally' photo-tagging game, featuring a React front end and an Express, Node.js back end designed to manage leaderboard information and character coordinates.",
     video:
       "https://live.staticflickr.com/video/53991983729/a0b46ce680/720p.mp4?s=eyJpIjo1Mzk5MTk4MzcyOSwiZSI6MTcyNjIyNzY2NywicyI6ImRiNDM3YTliZjI0YTE2MzU1MjE1ZmJkMDk1ZDhmMTNkYjMwNjU3NWQiLCJ2IjoxfQ",
     stack: [
@@ -74,7 +74,7 @@ export const projectData = [
     title: "Music Inventory",
     type: "Inventory Management Application",
     description:
-      "An application that uses EJS for server-side rendering and manages data from a MongoDB database, utilizing Express on the back end.",
+      "An application that uses EJS for server-side rendering and manages data from a MongoDB database, using Node.js and Express.",
     video:
       "https://live.staticflickr.com/video/53992096105/22f93e1bc4/720p.mp4?s=eyJpIjo1Mzk5MjA5NjEwNSwiZSI6MTcyNjIyNzcyMywicyI6IjE2NmFhOTJkYzIzY2JjZmRjMDU0YTQxNzNkZjNjYTEyNWZmZjE1ZDAiLCJ2IjoxfQ",
     stack: ["html", "css", "javascript", "express", "mongodb"],
@@ -86,7 +86,7 @@ export const projectData = [
     title: "Tech Store",
     type: "Mock Shopping Cart",
     description:
-      "A shopping cart application that fetches data from a fake store API. Allows you to filter results, add and remove items from your cart and checkout.",
+      "A shopping cart React application that fetches data from a fake store API. Allows you to filter results, add and remove items from your cart and checkout.",
     video:
       "https://live.staticflickr.com/video/53991983554/c6438d39cc/720p.mp4?s=eyJpIjo1Mzk5MTk4MzU1NCwiZSI6MTcyNjIyNzcwNCwicyI6IjQxODhlMmQ3YWU1M2IyZGY4ZTU4OTAxNDA3OGQzYWRkOTVjMDFhOGQiLCJ2IjoxfQ",
     stack: ["javascript", "css", "react", "vite", "jest"],
@@ -98,7 +98,7 @@ export const projectData = [
     title: "CV Builder",
     type: "CV Creation Tool",
     description:
-      "Allows the user to generate a CV based on inputted data. Change text and accent colours and upload a photo.",
+      "A CV Builder React Application that allows the user to generate a CV based on inputted data. Change text and accent colours and upload a photo.",
     video:
       "https://live.staticflickr.com/video/53991903513/b8913100a4/720p.mp4?s=eyJpIjo1Mzk5MTkwMzUxMywiZSI6MTcyNjIyNzcyOCwicyI6IjJiNGJhZmY3MTg2NzljZTgzNGU0MmJjMGVjYzQ0ZDYzOGFlN2ZhMzAiLCJ2IjoxfQ",
     stack: ["javascript", "css", "react", "vite"],
@@ -110,7 +110,7 @@ export const projectData = [
     title: "Battleships",
     type: "Game Application",
     description:
-      "Allows the user to choose between two CPU difficulty settings. Created using vanilla JavaScript DOM manipulation.",
+      "A vanilla JavaScript battleships application that allows the user to choose between two CPU difficulty settings. Unit tested using Jest.",
     video:
       "https://live.staticflickr.com/video/53991671361/14d8c5b551/720p.mp4?s=eyJpIjo1Mzk5MTY3MTM2MSwiZSI6MTcyNjIyNzc2MSwicyI6IjJhZWNjNzUzZDNiYmYzZWMwNGNmODNiYTlmNWNjZjZmMTVlNTU0OGMiLCJ2IjoxfQ",
     stack: ["html", "javascript", "css", "jest"],
@@ -122,7 +122,7 @@ export const projectData = [
     title: "Weather Forecast App",
     type: "Weather Application",
     description:
-      "Retrieves data from a weather API and dynamically renders visuals based on the selected location's time and weather. Support for both Celsius and Fahrenheit units.",
+      "A vanilla JavaScript weather application that retrieves data from a weather API and dynamically renders the UI based on the selected location's time and weather.",
     video:
       "https://live.staticflickr.com/video/53991903393/d150ec26ca/720p.mp4?s=eyJpIjo1Mzk5MTkwMzM5MywiZSI6MTcyNjIyNzc3OSwicyI6IjBiMmU5MWE0NTUyYzkyMTcyMTNjZTRmMWI0ODI5YWFiY2YzYjgzMDgiLCJ2IjoxfQ",
     stack: ["html", "javascript", "css"],
